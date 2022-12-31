@@ -1,103 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #171B2A;" BorderPane.alignment="CENTER">
+      <AnchorPane fx:id="rulesBackground" prefHeight="200.0" prefWidth="200.0" stylesheets="@application/application.css" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="246.0" text="Rules" textFill="#d74125">
+            <Label fx:id="Title" alignment="CENTER" layoutX="246.0" stylesheets="@application/application.css" text="Rules" textFill="#d74125">
                <font>
                   <Font name="Arial Rounded MT Bold" size="40.0" />
                </font>
             </Label>
-            <Text fill="WHITE" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.Each round a player can either" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Press Play and provide a name" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      i.Draw a scenario card and get an objective (Card added to hand)" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      i. The name must have at least one non-whitespace character" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a.You can only ever have one objective. Drawn another, and current objective is overwritten." wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Press the &quot;Ready to Develop!&quot; button" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     ii.Draw 2 action cards" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Press the &quot;Collect&quot; button to collect your first card" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    iii.Draw 1 action card and play 1 action card" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Click on one of Decks" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    iv.Play 2 action cards" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    i. Action: Cards from this Deck are assigned tasks, and mostly increases RP" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.When playing an action card, what can happen" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   ii. Upgrade: Cards from this Deck are learning experiences, and mostly increases XP" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      i.Skill level up (Gain XP, possible objective)" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  iii. Objective: Cards from here give RP when you increase a skill by a certain amount." wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     ii.Code merged (Gain XP, possible objective)" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="3.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Press the &quot;Collect&quot; button to collect a card from the Deck you selected" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    iii.Bug introduced (Lose Current Objective, Gain one bug)" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   i. If you have 2+ cards, you can press &quot;previous&quot;/&quot;next&quot; to see the cards you collected" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    iv.To resolve a bug, player selects card, clicks resolve, and loses one action card (Gains XP, possible objective)" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Press &quot;View Hand&quot; to view cards you collected" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.Lose Condition: have 3 unresolved bugs (Shows poor time management and lack of skill)" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="3.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Once you collect an objective card, the objective will be displayed on the screen" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.Win Condition: Gain 123 XP: Get promoted from intern to developer!" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   i. The skill you need to increase and amount you need to increase it will be listed" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.Strategy" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="2.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   ii. Collecting another objective card will overwrite the current objective and its progress" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      i.May want to hold on to action cards until a certain skill higher (player.XP+=card.XP+player.getSkillLevel(cardSkill)*2)" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="3.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. Press the pause the button in the top-left button to pause the game anytime" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     ii.May want to draw a different scenario/objective" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="6.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   i. From the pause menu, you can view the &quot;Game Rules&quot;, &quot;About&quot;, or quit the game" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    iii.May want to resolve bug" wrappingWidth="600.0">
+            <Text fill="WHITE" layoutX="5.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  iii. You won't get the points from an objective card until you meet its goal" wrappingWidth="600.0">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="15.0" />
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="6.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RP (Reputation Points): You need a good reputation if you want to get promoted" wrappingWidth="600.0">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="6.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XP (Experience Points): This measures what you learned. XP is equal to all the points you gained in Git, Documentation, Product, Coding, &amp; troubleshooting COMBINED!" wrappingWidth="600.0">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="5.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Win by having at least 10 XP and 10 RP before the end of 10 sprints" wrappingWidth="600.0">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="6.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Every time you draw 2 cards, the sprint (round) increases by 1" wrappingWidth="600.0">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
                </font>
             </Text>
          </children>
